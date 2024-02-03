@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select And Textarea</title>
+    <meta name="description" content="Select And Textarea">
+</head>
+
+<body>
+    <div>
+        <h1>Book Store</h1>
+        <p>This Is My Book Store, Welcome</p>
+    </div>
+    <form action="" method="GET">
+        <input type="hidden" value="Osama">
+        <div>
+            <label for="username">username</label>
+            <input type="text" name="username" id="username" required placeholder="Username" value="Osama" readonly>
+        </div>
+        <br>
+        <div>
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" autofocus>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required placeholder="Write A Complex Password"
+                minlength="10" maxlength="20">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Write A Valid Email" value="o@nn.sa"
+                disabledaa>
+        </div>
+        <br>
+        <div>
+            <label for="color">Color</label>
+            <input type="color" name="Color" id="color">
+        </div>
+        <br>
+        <div>
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range" min="0" max="100" step="20" value="80">
+        </div>
+        <br>
+        <div>
+            <label for="number">Number</label>
+            <input type="number" name="number" id="number" min="10" max="100" step="10">
+        </div>
+        <div>
+            <hr>
+            <input type="radio" name="os" id="win" value="Windows" checked>
+            <label for="win">Windows</label>
+        </div>
+        <div>
+            <input type="radio" name="os" id="lin" value="Linux">
+            <label for="lin">Linux</label>
+        </div>
+        <div>
+            <input type="radio" name="os" id="mac" value="Mac">
+            <label for="mac">Mac</label>
+        </div>
+        <hr>
+        <div>
+            <input type="checkbox" name="os" id="win1" value="Windows" checked>
+            <label for="win1">Windows</label>
+        </div>
+        <div>
+            <input type="checkbox" name="os" id="lin1" value="Linux">
+            <label for="lin1">Linux</label>
+        </div>
+        <div>
+            <input type="checkbox" name="os" id="mac1" value="Mac">
+            <label for="mac1">Mac</label>
+        </div>
+        <br>
+        <label for="book">Choose Book:</label>
+        <select name="book" id="book">
+            <optgroup label="Romantic Books">
+                <option value="1">Book 1</option>
+                <option value="2">Book 2</option>
+                <option value="3">Book 3</option>
+            </optgroup>
+            <optgroup label="Police Books">
+                <option value="4" selected>Book 4</option>
+                <option value="5">Book 5</option>
+                <option value="6">Book 6</option>
+            </optgroup>
+        </select>
+        <hr>
+        <label for="sub">Text Area</label><br>
+        <textarea name="subject" id="sub" cols="40" rows="10" placeholder="Test Text">Test Text</textarea>
+        <hr>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Save">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Intro</title>
+    <meta name="description" content="Accessibility Intro">
+</head>
+
+<body>
+    <form action="">
+        <label for="user">Username</label>
+        <input id="user" type="text" name="user">
+        <!-- Old -->
+        <div role="checkbox" aria-checked="true" tabindex="0" aria-labelledby="plan">Send</div>
+        <label for="plan">Send Label</label><br>
+        <div role="checkbox" aria-checked="true" tabindex="0" aria-labelledby="plan1">Reset</div>
+        <label for="plan1">Reset Label</label><br>
+        <!-- New -->
+        <button>Send</button>
+        <button>Reset</button>
+    </form>
+</body>
+
+</html>
